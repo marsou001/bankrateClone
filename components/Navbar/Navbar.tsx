@@ -5,6 +5,7 @@ const Container = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5rem;
     padding: 5px 20px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
 `;
