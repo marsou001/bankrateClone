@@ -9,10 +9,14 @@ const Container = styled.div`
     margin: auto;
 `;
 
+const FormContainer = styled.div`
+    margin: 30px 0;
+`;
+
 function Form() {
     return (
         <Container>
-            <FormHeading />
+            <FormContainer />
             <FormMain />
         </Container>
     )

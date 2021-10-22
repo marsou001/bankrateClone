@@ -1,39 +1,12 @@
 import styled from "styled-components";
+import Form from './Form/Form';
+import ZIPInput from './ZIPInput/ZIPInput';
+import GetStartedButton from './GetStartedButton/GetStartedButton';
 
 const Container = styled.div`
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 30px 15px;
     border-radius: 5px;
-    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.2);
-`;
-
-const Form = styled.form`
-    font-weight: 500;
-    text-align: left;
-    width: 40%;
-    label, input, button {
-        width: 100%;
-    }
-    input, button {
-        margin: 10px 0;
-        padding: 10px 15px;
-        border-radius: 3px;
-    }
-    input {
-        border-width: 1px;
-        outline-color: #0045CE;
-        &focus {
-            background-color: #333;
-        }
-    }    
-    button {
-        color: white;
-        background-color: #0045CE;        
-        border: none;
-    }
+    box-shadow: 1px 7px 7px 5px rgba(0, 0, 0, 0.1);
 `;
 
 function FormMain() {
@@ -42,8 +15,8 @@ function FormMain() {
             <h3>Enter your ZIP code</h3>
             <Form>
                 <label htmlFor='ZIP code'>ZIP code</label>
-                <input type='text' id='ZIP code' name='ZIP-code' />
-                <button type='submit'>Get Started</button>
+                <ZIPInput type='text' id='ZIP code' name='ZIP-code' />
+                <GetStartedButton type='submit'>Get Started</GetStartedButton>
             </Form>
         </Container>
     )
