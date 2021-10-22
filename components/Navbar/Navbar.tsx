@@ -11,15 +11,27 @@ const Container = styled.header`
 `;
 
 const Logo = styled.div`
-    width: 100px;
+    width: 140px;
     font-weight: 600;
     line-height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .bankrate {
     }
-    .mortgages {        
-        font-size: 0.7rem;
-        text-transform: uppercase;        
-        letter-spacing: 0.1rem;
+    div#b {
+        color: #fff;
+        background-color: #0157ff;
+        padding: 10px;
+        border-radius: 3px;
+    }
+    div#c {
+        width: 100px;
+        .mortgages {        
+            font-size: 0.7rem;
+            text-transform: uppercase;        
+            letter-spacing: 0.15rem;
+        }
     }
 `;
 
@@ -32,7 +44,10 @@ function Navbar() {
     return (
         <Container>
             <Logo>
-                <span className='bankrate'>Bankrate</span> <span className='mortgages'>mortgages</span>
+                <div id='b'>B</div>
+                <div id='c'>
+                    <span className='bankrate'>Bankrate</span> <span className='mortgages'>mortgages</span>
+                </div>
             </Logo>
             <Better>
                 Better
